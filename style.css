@@ -6,10 +6,18 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
+    background-color: #f0f8f0;
     color: #000000;
-    line-height: 1.6;
-    }
+}
+
+header {
+    background-color: #e654d2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 header { 
     background: #ef82e1;
@@ -29,13 +37,6 @@ header h1 {
     text-align: center;
         }
     
-    nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    }
-
 
 
 header nav ul {
