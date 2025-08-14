@@ -11,8 +11,6 @@ body {
 }
 
 header {
-    background-color: #e654d2;
-    color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
