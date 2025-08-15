@@ -1,66 +1,231 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sugar Rush</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conexão campo e cidade</title>
 
+    <style>
+      
+      /*Define o estilo do corpo da página*/
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /*Estilo do cabeçalho*/
+        header { 
+            background: #ef82e1;
+            color: white;
+            padding: 10px 0px;
+            justify-content: space-around;
+        }
+
+        /*Estilo do título principal*/
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /*Estilo da barra de navegação*/
+        nav {
+            background: #e654d2; 
+            padding: 0.8rem 0;
+            text-align: center;
+        }
+
+        /*Estilo dos links do menu*/
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /*mouse passa por cima do link*/
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /*Seção de destaque com imagem de fundo*/
+        .hero-section {
+            background-image: url(https://agoravocesabe.com/wp-content/uploads/2024/02/Campo-e-Cidade-na-Educacao-Infantil.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 5rem 0;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        /*Define tamanho e espaçamento do título e parágrafo da seção principal*/
+        .hero-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /*Define tamanho e espaçamento do título e parágrafo da seção principal*/
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /*Estilo do botão*/
+        .btn {
+            padding: 1rem 2rem;
+            background-color: #df05b0; 
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        /*mouse passa por cima do botão e muda de cor*/
+        .btn:hover {
+            background-color: #f56dce;
+        }
+
+        /*Seção das inovações tecnológicas*/
+        .innovation-section {
+            font-size: 25px;
+            padding: 30px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /*cartões de inovação*/
+        .innovation-cards {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /*Estilo de cada cartão*/
+        .innovation-card {
+            background: #ffdefd;
+            padding: 10px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition:  0.3s ease;
+        }
+
+        /*sobe o cartão um pouco com o mouse em cima*/
+        .innovation-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /*A imagem dentro do cartão*/
+        .innovation-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /*Título e descrição dentro do cartão*/
+        .innovation-card h4 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /*Título e descrição dentro do cartão*/
+        .innovation-card p {
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        
+        /*Rodapé da página*/
+        footer {
+            background-color: #ef82e1;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /*regras aplicadas somente em telas pequenas*/
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .innovation-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
     <header>
-        <h1>Sugar Rush</h1>
+        <h1>Festejando a conexão campo e cidade</h1>
     </header>
     
     <nav>
-        <a href="#receitas">Receitas</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#home">Início</a>
+        <a href="#inovacoes">Inovações</a>
         <a href="#contato">Contato</a>
     </nav>
-
-
-
-
-  <section id="hero">
-    <h2>Descubra receitas deliciosas e fáceis de fazer!</h2>
-    <p>Comida caseira com amor 💛</p>
-  </section>
-
-  <section id="receitas">
-    <h2>Receitas Populares</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?cake" alt="Bolo de Chocolate">
-        <h3>Bolo de Chocolate</h3>
-        <p>Fofinho, molhadinho e com cobertura irresistível!</p>
-      </div>
-
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?lasagna" alt="Lasanha">
-        <h3>Lasanha de Carne</h3>
-        <p>Camadas de sabor com muito queijo e molho.</p>
-      </div>
-
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?salad" alt="Salada">
-        <h3>Salada Tropical</h3>
-        <p>Leve, refrescante e perfeita para o verão.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="sobre">
-    <h2>Sobre</h2>
-    <p>Este site foi criado para compartilhar receitas simples, práticas e deliciosas, perfeitas para o dia a dia.</p>
-  </section>
-
+    
+    <section class="hero-section" id="home">
+        <h2>Conectando o campo e cidade</h2>
+        <p>O campo e a cidade são interdependentes sendo essencial para o desenvolvimento social e econômico.</p></p>
+        <button class="btn" onclick="showAlert()">Saiba Mais</button>
+    </section>
+    
+    <section class="innovation-section" id="inovacoes">
+        <h3>Inovações Tecnológicas no Campo</h3>
+        <div class="innovation-cards">
+            
+            <div class="innovation-card">
+                <img src="https://agrinho-25-mu.vercel.app/atividade%20cultural.webp" alt="Drones Agrícolas">
+                <h4>Intercâmbio Cultural</h4>
+                <p>O campo e a cidade trocam influências culturais constantemente. Algumas dessas trocas incluem: Música e moda, culinária, festas e tradições
+</p>
+            </div>
+            
+            <div class="innovation-card">
+                <img src="https://agrinho-25-mu.vercel.app/festival.jpg" alt="Sensores de Solo">
+                <h4>Cultura no Campoz</h4>
+                <p>A cultura do campo está intimamente ligada à natureza, ao trabalho agrícola, à convivência com a terra e às tradições passadas de geração em geração. Alguns elementos típicos da cultura rural incluem: Festas e tradições populares, música e dança, gastronomia, saberes tradicionais</p>
+            </div>
+            
+            <div class="innovation-card">
+                <img src="https://agrinho-25-mu.vercel.app/diversidade.webp" alt="Automação Agrícola">
+                <h4>Cultura na Cidade</h4>
+                <p>A cultura urbana é marcada pela diversidade e pelo dinamismo. A cidade é um centro de fusão de diferentes influências culturais, com uma variedade de costumes, expressões artísticas e práticas sociais. Alguns aspectos da cultura incluem: diversidade cultural, música e arte, modismos e inovações, educação e mídia</p>
+            </div>
+            
+        </div>
+    </section>
+    
     <footer id="contato">
         <h2>Contato: </h2>
         <p>Estamos localizados na rua XXXXXXXXXXX</p>
         <p>Entre em contato por: (XX) XXXXX-XXXX</p>
         <p>Nos siga nas redes sociais: <a href="https://www.instagram.com">Instagram</a></p>
-        <p>&copy; 2025 Receitas da Vovó. Todos os direitos reservados.</p>
+        <p>&copy; 2025 A Inovação Técnológica no Campo. Todos os direitos reservados.</p>
     </footer>
+
+
+    <script>
+        function showAlert() {
+            alert("Obrigado por se interessar pela Festejando a conexão campo e cidade!");
+        }
+    </script>
 
 </body>
 </html>
