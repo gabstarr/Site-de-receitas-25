@@ -23,8 +23,7 @@ header {
 /* Estilo do Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    color: #FFCBCB;
+    padding: 40px 20px;
     font-size: 24px;
     font-weight: bold;
 }
