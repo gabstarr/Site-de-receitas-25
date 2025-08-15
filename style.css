@@ -1,3 +1,4 @@
+/* Resetando o estilo padrão */
 * {
     margin: 0;
     padding: 0;
@@ -22,8 +23,12 @@ header {
 
 /* Estilo do Hero Section */
 .hero {
+    background-image: url(https://i.pinimg.com/1200x/65/db/62/65db62441ea892b53953877136270259.jpg);
+    background-size: auto;
+    background-position: center;
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
