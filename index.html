@@ -264,15 +264,19 @@
         }
 
 function mostrarReceita(card) {
-    const receita = card.querySelector(".receita");
+    const todasAsReceitas = document.querySelectorAll('.innovation-card .receita');
 
-    if (receita.style.display === "none" || receita.style.display === "") {
-      receita.style.display = "block";
+    todasAsReceitas.forEach(function(receita) {
+      if (receita !== card.querySelector('.receita')) {
+        receita.style.display = 'none';
+      }
+    });
+
+    const receitaAtual = card.querySelector('.receita');
+    if (receitaAtual.style.display === 'block') {
+      receitaAtual.style.display = 'none';
     } else {
-      receita.style.display = "none";
+      receitaAtual.style.display = 'block';
     }
   }
 </script>
-
-</body>
-</html>
