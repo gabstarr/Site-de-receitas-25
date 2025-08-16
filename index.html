@@ -263,20 +263,4 @@
             alert("Obrigado por se interessar pela Sugar Rush! Se tiver alguma duvida entre em contato conosco.");
         }
 
-function mostrarReceita(card) {
-    const todasAsReceitas = document.querySelectorAll('.innovation-card .receita');
 
-    todasAsReceitas.forEach(function(receita) {
-      if (receita !== card.querySelector('.receita')) {
-        receita.style.display = 'none';
-      }
-    });
-
-    const receitaAtual = card.querySelector('.receita');
-    if (receitaAtual.style.display === 'block') {
-      receitaAtual.style.display = 'none';
-    } else {
-      receitaAtual.style.display = 'block';
-    }
-  }
-</script>
